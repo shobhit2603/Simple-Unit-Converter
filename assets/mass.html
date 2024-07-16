@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/assets/mass.js" defer></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: rgb(3, 0, 33);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    p {
+        margin: 0px;
+        font-size: 2rem;
+        background-color: rgb(4, 0, 54);
+        padding: 30px;
+    }
+
+    .mainSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 2%;
+        margin-top: 150px;
+    }
+
+    .right {
+        background-color: rgb(4, 0, 54);
+        padding: 20px 30px;
+        border: 1px solid;
+        border-radius: 10px;
+    }
+
+    .right ul li {
+        list-style: none;
+        font-size: 1.2rem;
+    }
+
+    .right h2 {
+        margin-bottom: 10px;
+    }
+
+    .converter {
+        max-width: 600px;
+        border: none;
+        outline: none;
+        background-color: rgb(0, 100, 181);
+        padding: 50px 30px;
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .converter span {
+        width: 30px;
+        height: 30px;
+        margin: 0 20px;
+        margin-left: 25px;
+    }
+
+    input,
+    select {
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        padding: 0 10px;
+        margin: 5px;
+        color: white;
+        background-color: rgb(28, 28, 28);
+        text-align: center;
+        font-size: 15px;
+    }
+
+    select {
+        cursor: pointer;
+    }
+
+    footer {
+        margin-bottom: 0;
+
+    }
+</style>
+
+<body>
+    <p>Mass Converter</p>
+    <main>
+        <section class="mainSection">
+            <div class="left">
+                <div class="converter">
+                    <h1>Enter any Number</h1>
+                    <div class="input">
+                        <input type="text" placeholder="Input" id="input">
+                        <select id="inputType">
+                            <option value="gram">Gram</option>
+                            <option value="kilogram">Kilogram</option>
+                            <option value="tonne">Tonne</option>
+                            <option value="milligram">Milligram</option>
+                            <option value="quintal">Quintal</option>
+                            <option value="pound">Pound</option>
+                        </select>
+                    </div>
+                    <span>⇋</span>
+                    <div class="result">
+                        <input type="text" placeholder="Result" id="result">
+                        <select id="resultType">
+                            <option value="gram">Gram</option>
+                            <option value="kilogram">Kilogram</option>
+                            <option value="tonne">Tonne</option>
+                            <option value="milligram">Milligram</option>
+                            <option value="quintal">Quintal</option>
+                            <option value="pound">Pound</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <h2>Basic Information</h2>
+                <ul>
+                    <li>1 Kilogram (kg) = 0.001 Tonne (t)</li>
+                    <li>1 Kilogram (Kg) = 1000 Gram (g)</li>
+                    <li>1 Kilogram (Kg) = 1000000 Milligram (mg)</li>
+                    <li>1 Kilogram (Kg) = 0.01 Quintal (q)</li>
+                    <li>1 Kilogram (Kg) = 2.204 Pound (lb)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            Copyright &copy; www.simplconverter.com | All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

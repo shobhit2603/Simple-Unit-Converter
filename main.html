@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPL Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Simpl Converter</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#converters">Converters</a></li>
+                    <li><a href="/assets/about.html">About</a></li>
+                    <li><a href="/assets/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                Hi, There
+                <div>This is Simple Unit <span class="purple">Converter</span>.</div>
+                Calculate <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="/icon.png" alt="Image Not Found">
+            </div>
+        </section>
+        <hr id="converters">
+        <section class="secondSection">
+            <h1>Available tools in this Website.</h1>
+            <div class="btn">
+                <a href="/assets/length.html"><button>Length</button></a>
+                <span>Calculate in (m), (km), (dm), (cm), (mm), (ft), (in)</span>
+                <a href="/assets/mass.html" class="mass"><button>Mass</button></a>
+                <span>Calculate in (g), (kg), (t), (mg), (q), (lb)</span><br>
+                <a href="/assets/speed.html"><button>Speed</button></a>
+                <span>Calculate in (m/s), (km/h), (km/s), (kn), (mph)</span>
+                <a href="/assets/data.html" class="data"><button>Data</button></a>
+                <span>Calculate in (B), (KB), (MB), (GB), (TB), (PB)</span><br>
+                <a href="/assets/volume.html"><button>Volume</button></a>
+                <span>Calculate in (m<sup>3</sup>), (dm<sup>3</sup>), (cm<sup>3</sup>), (mm<sup>3</sup>)</span>
+                <a href="/assets/area.html" class="area"><button>Area</button></a>
+                <span>Calculate in (km<sup>2</sup>), (m<sup>2</sup>), (dm<sup>2</sup>), (cm<sup>2</sup>),
+                    (mm<sup>2</sup>)</span><br>
+                <a href="/assets/time.html"><button>Time</button></a>
+                <span>Calculate in (Year), (Week), (Day), (Hour), (Min), (Sec)</span><br>
+                <!-- <button>Currency</button>
+                <span>Calculate in (INR), (USD), (EUR), etc.</span><br> -->
+            </div>
+        </section>
+        <hr>
+        <section class="thirdSection">
+            <div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            Copyright &copy; www.simplconverter.com | All rights reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Length', 'Mass', 'Speed', 'Data', 'Volume', 'Area', 'Time', 'Anything.'],
+        typeSpeed: 80,
+    });
+</script>
+
+</html>
