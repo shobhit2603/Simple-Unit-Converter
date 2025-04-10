@@ -1,5 +1,15 @@
 # Overview
 
+This is a simple frontend based website, I created it using plain HTML, CSS and JAVA SCRIPT. I made this website as a Minor Project for my college. 
+This website helps you to calculate:
+-Area 
+-Volume
+-Time
+-Speed
+-Internet Speed
+-Mass
+-Length and so on.
+
 - Home Page
 ![image](https://github.com/user-attachments/assets/cf32fbf5-f24a-4427-a253-6be9469fec6c)
 - Available Converters
@@ -9,4 +19,3 @@
 - Contact Page
 ![image](https://github.com/user-attachments/assets/f4a45d10-694c-4b5b-af67-78a96634dc9f)
 
-This is a simple frontend based website, I created it using plain HTML, CSS and JAVA SCRIPT. I made this website as a Minor Project for my college. This website helps you to calculate Area, Volume, Time, Internet Speed, Speed, Mass, Length and etc.
